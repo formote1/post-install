@@ -11,7 +11,6 @@ sudo pacman -Syu --noconfirm
 echo "==> Installing KDE (curated set, not full plasma-meta)"
 sudo pacman -S --noconfirm \
     plasma-desktop \
-    plasma-wayland-session \
     kwin \
     systemsettings \
     powerdevil \
@@ -83,7 +82,7 @@ makepkg -si --noconfirm
 cd ~
 
 echo "==> Do you want to install third-party apps now?"
-sudo pacman -S \
+sudo pacman -S --noconfirm \
 	vim \
 	telegram-desktop \
 	steam \
